@@ -11,3 +11,12 @@
   </p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1200px-Gold_Star.svg.png" alt="Pro Star" width="100">
 </div>
+
+<button (click)="addItem()">Add Item</button>
+<ul>
+  <li *ngIf="items.length === 0">La lista esta vacía</li>
+  <li *ngFor="let name of items; index as i">
+    {{ name }} {{ i }}
+    <button (click)="deleteItem(i)">Delete</button>
+  </li>
+</ul>
