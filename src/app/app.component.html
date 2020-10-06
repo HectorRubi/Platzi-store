@@ -1,2 +1,13 @@
 <input type="text" [(ngModel)]="title">
 {{ title }}
+
+<div *ngIf="title === 'nicolas'">
+  Este es un div
+</div>
+
+<div *ngIf="isPro">
+  <p>
+    Este es un usuario Pro
+  </p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1200px-Gold_Star.svg.png" alt="Pro Star" width="100">
+</div>
