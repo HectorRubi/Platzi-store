@@ -9,4 +9,8 @@ import { Product } from '../product.model';
 export class ProductComponent {
 
   @Input() product: Product;
+
+  addCart() {
+    console.log('Añadir al carrito');
+  }
 }
