@@ -1,6 +1,4 @@
-<div class="product__info">
-  <h3>{{ product.title }}</h3>
-  <strong>$ {{ product.price }}</strong>
-</div>
 <img src="{{ product.image }}" alt="{{ product.title }}">
+<h3>{{ product.title }}</h3>
+<strong>${{ product.price }}.00</strong>
 <button (click)="addCart()">Agregar al carrito</button>
