@@ -58,15 +58,15 @@ export class AppComponent {
     }
   ];
 
-  addItem() {
+  addItem(): void {
     this.items.push('nuevo item');
   }
 
-  deleteItem(index: number) {
+  deleteItem(index: number): void {
     this.items.splice(index, 1);
   }
 
-  clickProduct(id: string) {
+  clickProduct(id: string): void {
     console.log('Product: ', id);
   }
 }
