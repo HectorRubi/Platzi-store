@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .product-grid {
   display: grid;
@@ -11,5 +12,23 @@ body {
 @media (min-width: 576px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1920px) {
+  .product-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
