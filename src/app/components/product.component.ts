@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit, DoCheck } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnInit, DoCheck, OnDestroy } from '@angular/core';
 
 import { Product } from '../product.model';
 
@@ -6,7 +6,7 @@ import { Product } from '../product.model';
   selector: 'app-product',
   templateUrl: './product.component.html'
 })
-export class ProductComponent implements OnInit, DoCheck {
+export class ProductComponent implements OnInit, DoCheck, OnDestroy {
 
   @Input() product: Product;
   @Output() productClicked: EventEmitter<any> = new EventEmitter();
@@ -25,6 +25,10 @@ export class ProductComponent implements OnInit, DoCheck {
 
   ngDoCheck() {
     console.log('4 ngDoCheck');
+  }
+
+  ngOnDestroy() {
+    console.log('5 ngOnDestroy')
   }
 
   addCart() {
