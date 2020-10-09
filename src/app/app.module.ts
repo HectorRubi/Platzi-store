@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product.component';
 import { CardComponent } from './card/card.component';
 import { ExponentialPipe } from './exponential.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     CardComponent,
-    ExponentialPipe
+    ExponentialPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
