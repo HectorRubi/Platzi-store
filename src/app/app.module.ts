@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product.component';
 import { CardComponent } from './card/card.component';
+import { ExponentialPipe } from './exponential.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    CardComponent
+    CardComponent,
+    ExponentialPipe
   ],
   imports: [
     BrowserModule,
