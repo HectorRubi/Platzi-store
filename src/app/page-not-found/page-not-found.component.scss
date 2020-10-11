@@ -1,0 +1,49 @@
+.not-found {
+  height: 100vh;
+  min-height: 600px;
+  background-image: url('https://images.pexels.com/photos/4555783/pexels-photo-4555783.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.not-found::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+}
+.not-found__content {
+  grid-column: 2 / 4;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.not-found__content--title {
+  font-size: 60px;
+  font-weight: normal;
+}
+.not-found__content--subtitle {
+  font-size: 30px;
+  font-weight: normal;
+}
+.not-found__content--link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 20px;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+.not-found__content--link:hover {
+  background-color: white;
+  color: black;
+}
