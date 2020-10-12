@@ -52,4 +52,12 @@ export class ProductsService {
   ];
 
   constructor() { }
+
+  getAllProducts(): Product[] {
+    return this.products;
+  }
+
+  getProduct(id: string): Product {
+    return this.products.find(item => id === item.id);
+  }
 }
