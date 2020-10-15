@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
 
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
@@ -31,7 +32,8 @@ import { LayoutComponent } from './layout/layout.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
