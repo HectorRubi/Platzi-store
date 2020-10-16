@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { DemoComponent } from './demo/demo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { LayoutComponent } from './layout/layout.component';
     CardComponent,
     DemoComponent,
     PageNotFoundComponent,
-    ProductDetailComponent,
     LayoutComponent
   ],
   imports: [
