@@ -8,7 +8,6 @@ import { CoreModule } from './core/core.module';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
-import { DemoComponent } from './demo/demo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LayoutComponent } from './layout/layout.component';
 
@@ -16,7 +15,6 @@ import { LayoutComponent } from './layout/layout.component';
   declarations: [
     AppComponent,
     CardComponent,
-    DemoComponent,
     PageNotFoundComponent,
     LayoutComponent
   ],
