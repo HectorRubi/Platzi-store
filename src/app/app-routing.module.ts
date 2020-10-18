@@ -21,6 +21,11 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       },
       {
+        path: 'about-us',
+        canActivate: [AdminGuard],
+        loadChildren: () => import('./about-us/about-us.module').then(m => m.AboutUsModule)
+      },
+      {
         path: 'products',
         canActivate: [AdminGuard],
         loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
@@ -32,6 +37,7 @@ const routes: Routes = [
       },
       {
         path: 'demo',
+        canActivate: [AdminGuard],
         loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
       }
     ]
