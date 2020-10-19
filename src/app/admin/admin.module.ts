@@ -12,7 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { StockComponent } from './components/stock/stock.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
@@ -22,7 +22,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, StockComponent, DashboardComponent],
+  declarations: [ProductFormComponent, NavComponent, ProductListComponent, DashboardComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
