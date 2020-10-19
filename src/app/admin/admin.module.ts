@@ -16,9 +16,13 @@ import { StockComponent } from './components/stock/stock.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, StockComponent],
+  declarations: [ProductFormComponent, NavComponent, StockComponent, DashboardComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
@@ -32,7 +36,10 @@ import { MatSortModule } from '@angular/material/sort';
     MatListModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule
   ]
 })
 export class AdminModule { }
