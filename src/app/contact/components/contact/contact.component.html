@@ -1,39 +1,58 @@
-<div class="contact">
-  <div class="contact__header">
-    <div class="contact__header--container">
-      <h1 class="contact__header--title">Contacto</h1>
-      <p class="contact__header--subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<section class="hero">
+  <div class="row middle-xs center-xs content">
+    <div class="col-xs-12 col-md-5">
+      <div class="box">
+        <h1 class="title">Contact</h1>
+        <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-5 col-md-offset-2">
+      <img src="https://lh3.googleusercontent.com/proxy/dWiFGm9OrHwNy0H1bYYthYhQxZHJ2hCLMBRRpMAN4e55yiZHyJvEkKNFsp-DTWndc72YQX2arZurisUMDKFZ9ilBgAMruv4UVL6TPNo4lw" alt="Contact image" class="image">
     </div>
   </div>
-  <div class="contact__content">
-    <div class="contact__content--parr">
-      <h2>Si tienes alguna duda contactanos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ullam magni iusto, earum optio nisi iure expedita aut, amet qui facilis obcaecati quaerat quia cumque nulla sint suscipit dicta impedit?</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas suscipit laborum veniam molestiae, impedit natus placeat accusantium labore, provident, quisquam repellat obcaecati iure repudiandae consequuntur? Praesentium inventore sequi eveniet cupiditate.</p>
-      <ul>
-        <li><strong>Direccion:</strong> Lorem, ipsum dolor sit amet consectetur.</li>
-        <li><strong>Telefono:</strong> 123456789</li>
-        <li><strong>Email:</strong> lorem@ipsum.com</li>
-      </ul>
+</section>
+<section class="contact">
+  <div class="row middle-xs">
+    <div class="col-xs-12 col-md-6">
+      <div class="box">
+        <h2 class="title">Si tienes alguna duda contactanos</h2>
+        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem eius amet voluptatibus quas quidem.</p>
+        <div class="info">
+          <mat-divider></mat-divider>
+          <p><mat-icon aria-hidden="false" aria-label="location icon">location_on</mat-icon><strong>Dirección: </strong><span>Lorem ipsum dolor, sit amet</span></p>
+          <mat-divider></mat-divider>
+          <p><mat-icon aria-hidden="false" aria-label="location icon">email</mat-icon><strong>Email: </strong><span>lorem@ipsum.com</span></p>
+          <mat-divider></mat-divider>
+          <p><mat-icon aria-hidden="false" aria-label="location icon">phone</mat-icon><strong>Teléfono: </strong><span>(123) 456 7890</span></p>
+        </div>
+      </div>
     </div>
-    <div class="contact__content--form">
-      <form class="contact__form">
-        <div class="form-group">
-          <input type="text" name="name" id="name" placeholder="Nombre">
-        </div>
-        <div class="form-group">
-          <input type="text" name="subject" id="subject" placeholder="Asunto">
-        </div>
-        <div class="form-group">
-          <input type="email" name="email" id="email" placeholder="Corro">
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
-        </div>
-        <div class="form-group">
-          <button class="contact__form--button" type="button">Enviar</button>
-        </div>
-      </form>
+    <div class="col-xs-12 col-md-6">
+      <div class="box">
+        <mat-form-field appearance="fill">
+          <mat-label>Nombre</mat-label>
+          <input matInput type="text" placeholder="John Doe">
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Asunto</mat-label>
+          <input matInput type="text" placeholder="My subject">
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="John@gmail.com">
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Textarea</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Enviar</button>
+      </div>
     </div>
   </div>
-</div>
+</section>
