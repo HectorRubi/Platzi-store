@@ -31,4 +31,17 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  createProduct() {
+    const newProduct: Product = {
+      id: '26',
+      title: 'Figura de Acción de Freddy',
+      description: 'Es la nueva figura de acción de tu CEO favorito.',
+      image: 'assets/images/producto.png',
+      price: 500000
+    };
+    this.productsService.createProduct(newProduct).subscribe(product => {
+      console.log(product);
+    });
+  }
+
 }
