@@ -44,4 +44,20 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  updateProduct() {
+    const newProduct: Partial<Product> = {
+      description: 'Es la nueva figura de acción de tu CEO favorito con la descripcion diferente',
+      price: 5555555
+    };
+    this.productsService.updateProduct('26', newProduct).subscribe(product => {
+      console.log(product);
+    });
+  }
+
+  deleteProduct() {
+    this.productsService.deleteProduct('26').subscribe(rta => {
+      console.log(rta);
+    });
+  }
+
 }
