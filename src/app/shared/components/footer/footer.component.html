@@ -38,11 +38,12 @@
           <p>
             <mat-form-field appearance="fill">
               <mat-label>Email</mat-label>
-              <input matInput placeholder="johndoe@gmail.com" type="email" name="email">
+              <input matInput [formControl]="emailField" placeholder="johndoe@gmail.com" type="email" name="email">
               <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint *ngIf="emailField.invalid">El campo no es valido</mat-hint>
             </mat-form-field>
           </p>
-          <button mat-raised-button color="accent">Suscribirse</button>
+          <button mat-raised-button color="accent" [disabled]="emailField.invalid" (click)="sendMail()">Suscribirse</button>
         </div>
       </div>
     </div>
