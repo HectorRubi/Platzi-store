@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "platzi-store-fc265": {
+      "hosting": {
+        "platzi-store": [
+          "platzi-store-fc265"
+        ]
+      }
+    }
+  }
+}
