@@ -1,1 +1,37 @@
-<p>login works!</p>
+<h1>Login</h1>
+<form [formGroup]="form" (ngSubmit)="login($event)">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="john_doe@gmail.com" type="text" formControlName="email">
+          <mat-icon matSuffix>person</mat-icon>
+          <mat-error *ngIf="emailField.hasError('required')">El email es obligatorio</mat-error>
+          <mat-error *ngIf="emailField.hasError('email')">Formato de email incorrecto</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+          <button mat-icon-button matSuffix (click)="handlePassword($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <mat-error *ngIf="passwordField.hasError('required')">La contraseña es obligatoria</mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="box">
+        <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">Entrar</button>
+      </div>
+    </div>
+  </div>
+</form>
